@@ -10,17 +10,17 @@
         "service_worker": "src/background/service-worker.js"
         },
         "default_icon": {
-            "16": "img/icon_16px.png",
-            "32": "img/icon_32px.png",
-            "48": "img/icon_48px.png",
-            "128": "img/icon_128px.png"
+            "16": "icon/icon_16px.png",
+            "32": "icon/icon_32px.png",
+            "48": "icon/icon_48px.png",
+            "128": "icon/icon_128px.png"
         }
     },
     "icons": {
-        "16": "img/icon_16px.png",
-        "32": "img/icon_32px.png",
-        "48": "img/icon_48px.png",
-        "128": "img/icon_128px.png"
+        "16": "icon/icon_16px.png",
+        "32": "icon/icon_32px.png",
+        "48": "icon/icon_48px.png",
+        "128": "icon/icon_128px.png"
     },
     "permissions": ["storage","tabs"],
     "host_permissions": [],
