@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name":"Dado d20", 
+    "version":"0.1.2",
+    "description":"Minha primeira extensão do Google Chrome",
+    "action" : {
+        "default_popup":"src/popup/popup.html",
+        "default_title":"Dado d20!",
+        "background": {
+        "service_worker": "src/background/service-worker.js"
+        },
+        "default_icon": {
+            "16": "img/icon_16px.png",
+            "32": "img/icon_32px.png",
+            "48": "img/icon_48px.png",
+            "128": "img/icon_128px.png"
+        }
+    },
+    "icons": {
+        "16": "img/icon_16px.png",
+        "32": "img/icon_32px.png",
+        "48": "img/icon_48px.png",
+        "128": "img/icon_128px.png"
+    },
+    "permissions": ["storage","tabs"],
+    "host_permissions": [],
+    "content_scripts": [
+    {
+      "matches": ["https://developer.chrome.com/*"],
+      "js": ["src/content/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+
+}
